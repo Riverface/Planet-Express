@@ -1,0 +1,5 @@
+.Window{
+    border: 1px black outset;
+    background-color: palegreen;
+    border-radius: 20px;
+}
