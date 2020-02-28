@@ -1,30 +1,3 @@
 @using ShippingCompany.Models;
 <h1>Welcome to Planet Express. Yes, we ship dogs.</h1>
-<ul>
-@if (Model.Count == 0)
-{
-  <p>There are no Parcels in the list.</p>
-}
-<ul>
-  @foreach (Parcel package in Model)
-  {
-    <div style="">
-
-    <li> @package.Name</li>
-    <li>Description: @package.BoxDescription</li>
-    <li>Weight of box: @package.BoxWeight</li>
-    <li>Width: @package.Dimensions.X</li>
-    <li>Length: @package.Dimensions.Y</li>
-    <li>Height: @package.Dimensions.Z</li>
-    @foreach(Item item in package.ItemList){
-    <div>
-      <li>@item.Name</li>
-      <li>@item.Description</li>
-      <li>@item.Weight</li>
-    </div>
-    }
-    </div>
-  }
-</ul>
-
-<a href="/parcel/new">Add a new Parcel.</a>
+<a href="/parcel/new">Add a new Parcel.</a> 
